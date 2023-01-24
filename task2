@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+
+		/* Styling the body element
+		like body color and margin */
+		
+		body {
+			background:linear-gradient(180deg,#c995ba,#db5ab4);
+			margin: 15%;
+		}
+
+		/* Styling the Title and giving
+		shadow to the title */
+		#title {
+			text-align: center;
+			text-shadow: 7px 7px 10px white;
+			font-size: 9vh;
+		}
+        .center{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+		}
+		
+		/* Setting width and display
+		type of image */
+		img {
+			display: inline-block;
+			width: 50%;
+			margin-top:0px;
+			
+		}
+
+		/* Setting font color and font
+		size of the image-caption */
+		#caption {
+			font-size: 20px;
+			font-family: Gill Sans;
+			margin-top:0px;
+			color: black;
+		}
+
+		/* Styling the content of the page like-
+		padding, font-size, font color etc.*/
+		div#tribute-data {
+			background:linear-gradient(180deg,pink,#42f5c8);
+			box-shadow: 20px 20px 20px #49b3ab;
+			font-family: Georgia;
+			padding: 25px 25px;
+			margin: 11px;
+			margin-top: 0px;
+		}
+
+		/* Styling the title of the content */
+		h1.title-LATA DIDI {
+			font-size: 35;
+			color: white;
+			text-align: center;
+			text-shadow: 5px 5px 10px black;
+		}
+
+		/* Styling the link provided at the end */
+		#tribute-link {
+			text-decoration: none;
+			color: black;
+		}
+	</style>
+</head>
+
+<body>
+	<main id="main">
+
+		<!-- Title of the page -->
+		<h1 id="title">
+			SACHIN TENDULKAR
+		</h1>
+
+		<div id="img">
+
+			<!--Image of the Tribute Person-->
+			
+			<img src="sachin tendulkar.png" height:"200" width:"200" alt="SACHIN TENDULKAR" class="center">
+			<br><br>
+				<center><h2>Indian batsman Sachin Tendulkar is to be awarded the Bharat Ratna.Also known as the 'GOD OF CRICKETR'.</h2></center>
+			</small>
+		</div>
+
+		<div id="tribute-data">
+
+			<!--Achievements and other
+				details of the person-->
+			<h1 class="Little Master Master Blaster" width="200px">
+				<center>About the Legend</center>
+			</h1>
+
+			
+
+<p>
+			
+
+	✒️ Tendulkar was born at Nirmal Nursing Home in Dadar, Bombay on 24 April 1973 [26] [27][28][29] to a Rajapur Saraswat Brahmin Maharastrian family[30][31][32] His father, Ramesh Tendulkar, was a well-known Marathi novelist & poet and his mother, Rajni, worked in the insurance industry.<br><br> He is regarded as one of the greatest batsmen in the history of cricket.<br><br>
+
+             ✒️He is the all-time highest run-scorer in both ODI and Test cricket with more than 18000 runs and 15000 runs respectively in total.[5] He also holds the record for receiving the most man-of-the-match awards in international cricket.<br><br>Tendulkar is sometimes referred to as "The God of Cricket" in India. A film with that name was released in 2021<br><br>
+
+             ✒️In 1942, she sang the song "Nachu Yaa Gade" for a Marathi movie, but the song was cut from the final release of the film. In 1943, she also recorded her first Hindi song for a Marathi film.<br><br>
+			 <b>His Awards</b><br><br>
+            ✒️ Tendulkar received the Arjuna Award in 1994 for his outstanding sporting achievements, the Khel Ratna Award, India's highest sporting honour, in 1997, and the Padma Shri and Padma Vibhushan awards in 1999 and 2008, respectively, two of India's highest civilian awards.<br><br>A few hours after the end of his last match in November 2013, the Prime Minister's Office announced the decision to award him the Bharat Ratna, India's highest civilian award.[13][14] As of 2021, he is the youngest recipient to date and was the first sportsperson to receive the award.[15][16] In 2012, Tendulkar was nominated to the Rajya Sabha, the upper house of the Parliament of India.
+                                      <b>International Career</b><br><br>                                      
+             ✒️Raj Singh Dungarpur is credited for the selection of Tendulkar for the Indian tour of Pakistan in late 1989,[68] after one first class season.[69] The Indian selection committee had shown interest in selecting Tendulkar for the tour of the West Indies held earlier that year, but eventually did not select him, as they did not want him to be exposed to the dominant fast bowlers of the West Indies so early in his career"<br><br>
+             ✒️Tendulkar made his Test debut against Pakistan in Karachi in November 1989 aged 16 years and 205 days. He made 15 runs, being bowled by Waqar Younis, who also made his debut in that match, but was noted for how he handled numerous blows to his body at the hands of the Pakistani pace attack.<br><br>
+			 <b>✒️In the fourth and final Test in Sialkot, he was hit on the nose by a bouncer bowled by Younis, but he declined medical assistance and continued to bat even as he gushed blood from it</b><br><br>
+
+
+ 
+			</p>
+
+
+		</div>
+		<br>
+		 For more information,
+		check out
+		<a id="tribute-link" href="https://en.wikipedia.org/wiki/Sachin_Tendulkar">
+			<b>Sachin Tendulkar</b> on Wikipedia. [
+			<small>Developed by @<a href="#">
+					Vaishnavi Manepatil</a></a>
+		</small>]
+	</main>
+</body>
+
+</html
