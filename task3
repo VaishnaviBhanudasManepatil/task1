@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+body{
+    background: linear-gradient(#e1557f,#72b5df);
+	background-repeat:no-repeat;
+	height:100vh;
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+	font-family:cursive;
+}
+
+section{
+    margin-top:80px; 
+}
+
+h1{
+    text-align: center;
+	color: #fff;
+	font-size: 45px; 
+	margin-bottom: 30px; 
+}
+
+.wrapper{
+    width: 500px;
+}
+
+.input-container{
+    display: flex;
+	justify-content: center;
+	height:47px;
+}
+
+input, button{
+    border:none;
+	outline:none;
+}
+
+.input-container input{
+    padding:18px 15px;
+	font-size: 15px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius: 5px;
+	width: 320px;
+}
+
+.input-container button:{
+    border-top-right-radius:5px;
+	border-bottom-right-radius: 5px;
+	cursor: pointer;
+	padding: 16px 25px;
+	font-size: 16px;
+	color:#ff5762;
+    background: #fff;
+	border-left: 2px solid #eee;
+}
+
+.input-container button:hover{
+    color:#fff;
+    background: #ff5762;	
+}
+
+.todo-container{
+    /* margin-top: 40px; */
+	padding: 0;
+}
+
+.todo-container .todo{
+    margin: 0 auto;
+	margin-bottom: 12px;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+	background: #fff;
+	border-radius: 5px;
+}
+
+.todo-container .todo.completed{
+    width: 90%;
+	text-decoration: line-through;
+	color:#7e7e7e;
+	opacity: 0.7;
+}
+
+.todo-container button{
+    padding: 16px;
+	flex:1;
+	margin:0;
+}
+
+.todo-container .todo-check{
+    color:#05cf5b;
+	background: #fff;
+	border-left: 2px solid #eee;
+	font-size: 16px;
+}
+
+.todo-container .todo-check:hover{
+    color:#fff;
+	background: #05cf5b;
+	cursor: pointer;
+}
+
+.todo-container .todo-delete{
+    color:#ff5762;
+	background:#fff;
+	font-size: 16px;
+	border-left: 2px solid #eee;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.todo-container .todo-delete:hover{
+    color:#fff;
+	background:#ff5762;
+	cursor: pointer;
+}
+
+.todo-container .todo li{
+    flex: 10;
+	padding:16px;
+	list-style-type: none;
+	margin: 0;
+	line-height: 1.5;
+}
+</style>
+<body>
+	
+	<section>
+        <h1>TODO APP</h1>
+		<div class="wrapper">
+		<div class="input-container">
+			<input type="text" name="todo" class="todo-input" id="todo-input" placeholder="Enter TODO Task">
+			<button class="add-button" id="add-button">
+			    <i class="fa-solid fa-circle-plus"></i>
+			</button>
+		</div>
+	
+	    <ul class="todo-container" id="todo-container"></ul>
+		</div>
+	</section>
+
+    <script>
+	    addButton = document.getElementById("add-button")
+	    todoContainer =  document.getElementById("todo-container")
+		todoInput =  document.getElementById("todo-input")
+ 
+        addButton.addEventListener("click",(e) =>{
+		
+		    let todo = document.createElement("div");
+			todo.classList.add("todo");
+			 
+			let li= document.createElement("li");
+			li.innerText = `${todoInput.value}`;
+	        todo.appendChild(li);
+			
+			let checkButton = document.createElement("button");
+			checkButton.innerHTML ='<i class="fa-solid fa-circle-check"></i>';
+			checkButton.classList.add("todo-check"); 
+			todo.appendChild(checkButton);
+	    
+		    let deleteButton = document.createElement("button");
+			deleteButton.innerHTML ='<i class="fa-solid fa-circle-minus"></i>';
+			deleteButton.classList.add("todo-delete"); 
+			todo.appendChild(deleteButton);
+			
+			if(todoInput.value === ""){
+			    alert("Please Enter Some Text");
+		    }
+			else{
+			    todoContainer.appendChild(todo);
+			}
+			
+			todoInput.value = "";
+		
+		});
+		    
+		todoContainer.addEventListener("click",(e) =>{
+			    let target = e.target;
+				if(target.classList.contains("todo-delete")){
+				    let item = target.parentElement;
+					item.remove();
+				}
+				
+				if(target.classList.contains("todo-check")){
+				    let item = target.parentElement;
+					item.classList.toggle("completed");
+				}
+		});
+ </script>
+</body>
+</html>
